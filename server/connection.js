@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const MONGO_URI = "mongodb+srv://blogapp:blogapp123@cluster0.mwbydw6.mongodb.net/?retryWrites=true&w=majority"
+const MONGO_URI = "mongodb+srv://blogapp://@cluster0.mwbydw6.mongodb.net/blogs?retryWrites=true&w=majority"
  const connectDb = async () =>{
     
     const connection = await mongoose.connect(MONGO_URI);
@@ -7,4 +7,5 @@ const MONGO_URI = "mongodb+srv://blogapp:blogapp123@cluster0.mwbydw6.mongodb.net
     else console.log("failed");
 
  }
- module.exports = {connectDb}
+ module.exports = {connectDb};
+ 
